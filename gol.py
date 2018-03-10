@@ -107,6 +107,7 @@ if __name__ == "__main__":
                 if event.keychar == 'ESCAPE': # Resets the field
                     new_field = [[0 for x in range(SCREEN_HEIGHT - INFO_HEIGHT)] for xx in range(SCREEN_WIDTH)]
                     gen = 0
+                    PAUSED = True
                 elif event.keychar == 'SPACE': # Pauses and unpauses the game
                     PAUSED = not PAUSED
                 elif event.keychar == '.': # Advances by 1 generation when the game is paused
